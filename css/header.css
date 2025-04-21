@@ -24,7 +24,7 @@ header {
   padding: 5px;
 }
 
-img {
+#header-icon {
   width: 5vw;
   /* viewport width - ширина окна браузера */
   min-width: 35 px;
