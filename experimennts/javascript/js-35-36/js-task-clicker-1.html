@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+ 
+ 
+  <img src="https://ir.ozone.ru/s3/multimedia-k/c1000/6689957564.jpg" alt="" 
+  onclick="Onclicker()">
+  <p>0</p>
+  <script>
+      var clicker = localStorage.getItem("clickerPoints")
+      function Onclicker() {
+          
+          clicker ++
+          localStorage.setItem("clickerPoints",clicker)
+          //console.log(clicker)
+          document.querySelector("p").textContent = clicker
+          
+          
+      }
+      document.querySelector("p").textContent = localStorage.getItem("clickerPoints")
+    </script>
+   
+    
+</body>
+</html>
